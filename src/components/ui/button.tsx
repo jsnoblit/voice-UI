@@ -5,20 +5,20 @@ import * as React from "react";
 import { cn } from "../../lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 [&_svg]:text-gray-800 dark:[&_svg]:text-gray-900",
   {
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow hover:bg-primary/90",
+          "bg-white text-gray-800 shadow hover:bg-gray-50 active:bg-gray-100 aria-selected:bg-gray-100",
         destructive:
-          "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+          "bg-red-50 text-red-900 shadow-sm hover:bg-red-100 active:bg-red-200 aria-selected:bg-red-200",
         outline:
-          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-white shadow-sm hover:bg-gray-50 active:bg-gray-100 aria-selected:bg-gray-100",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-gray-50 text-gray-800 shadow-sm hover:bg-gray-100 active:bg-gray-200 aria-selected:bg-gray-200",
+        ghost: "hover:bg-gray-50 text-gray-800 active:bg-gray-100 aria-selected:bg-gray-100",
+        link: "text-primary underline-offset-4 hover:underline bg-transparent active:text-primary/70 aria-selected:text-primary/70",
       },
       size: {
         default: "h-9 px-4 py-2",

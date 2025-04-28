@@ -54,9 +54,9 @@ export const Layout = (): JSX.Element => {
             size="icon"
             className={`w-[54px] h-[54px] rounded-[90px] transition-all duration-200 group ${
               selectedButton === 'power' 
-                ? 'bg-[#2D3C44] shadow-[inset_0px_2px_4px_rgba(0,0,0,0.15)]' 
+                ? 'bg-gray-100 shadow-[inset_0px_2px_4px_rgba(0,0,0,0.05)]' 
                 : 'bg-white shadow-[0px_16px_32px_-4px_rgba(12,12,13,0.1),0px_0px_4px_-4px_rgba(12,12,13,0.05)]'
-            } p-0 hover:bg-white`}
+            } p-0 hover:bg-gray-50`}
             onClick={() => setSelectedButton(selectedButton === 'power' ? null : 'power')}
           >
             <PowerIcon className={`w-6 h-6 text-[#2D3C44] group-hover:text-[#2D3C44]`} />
@@ -71,9 +71,9 @@ export const Layout = (): JSX.Element => {
             size="icon"
             className={`w-[54px] h-[54px] rounded-[90px] transition-all duration-200 group ${
               selectedButton === 'mic' 
-                ? 'bg-[#2D3C44] shadow-[inset_0px_2px_4px_rgba(0,0,0,0.15)]' 
+                ? 'bg-gray-100 shadow-[inset_0px_2px_4px_rgba(0,0,0,0.05)]' 
                 : 'bg-white shadow-[0px_16px_32px_-4px_rgba(12,12,13,0.1),0px_0px_4px_-4px_rgba(12,12,13,0.05)]'
-            } p-0 hover:bg-white`}
+            } p-0 hover:bg-gray-50`}
             onClick={() => setSelectedButton(selectedButton === 'mic' ? null : 'mic')}
           >
             <MicIcon className={`w-6 h-6 text-[#2D3C44] group-hover:text-[#2D3C44]`} />
