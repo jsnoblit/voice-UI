@@ -13,6 +13,14 @@ const chatMessages = [
     id: 2,
     text: "Hi!\nWhat can I help you with?",
   },
+  {
+    id: 3,
+    text: "Hi!\nWhat can I help you with?",
+  },
+  {
+    id: 4,
+    text: "Hi!\nWhat can I help you with?",
+  },
 ];
 
 export const Layout = (): JSX.Element => {
@@ -21,12 +29,12 @@ export const Layout = (): JSX.Element => {
   return (
     <div className="flex h-screen bg-[#fcfcfa] w-full min-w-[390px]">
       <div className="flex flex-col h-full gap-10 pt-[54px] pb-12 px-9 w-full">
-        <Card className="flex flex-col gap-2.5 p-6 flex-1 w-full bg-faint-opal rounded-2xl overflow-hidden shadow-[inset_0px_2px_1px_#0000000d] relative">
+        <Card className="flex flex-col gap-2.5 p-0 flex-1 w-full bg-faint-opal rounded-2xl overflow-hidden shadow-[inset_0px_2px_1px_#0000000d] relative">
           <div className="absolute w-[328px] h-[328px] left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 opacity-60">
             <div className="relative w-[400px] h-[400px] -left-9 rounded-[200px] blur-[17px] [background:radial-gradient(50%_50%_at_50%_50%,rgba(200,193,201,1)_0%,rgba(200,193,201,0)_100%)]" />
           </div>
 
-          <CardContent className="flex flex-col items-start gap-9 flex-1 w-full p-0 relative">
+          <CardContent className="flex flex-col items-start gap-9 flex-1 w-full pt-6 px-6 relative overflow-y-auto">
             {chatMessages.map((message) => (
               <div
                 key={message.id}
